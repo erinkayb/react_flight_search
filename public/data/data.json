@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "flightNumber": "101BA",
+    "date": "01/01/2018",
+    "airliner": "British Airways",
+    "departureAirport": "LHR",
+    "departureTime": "13:30",
+    "arrivalAirport": "AMS",
+    "arrivalTime": "15:00"
+  },
+  {
+    "id": 2,
+    "flightNumber": "511BA",
+    "date": "01/02/2018",
+    "airliner": "British Airways",
+    "departureAirport": "EWR",
+    "departureTime": "17:12",
+    "arrivalAirport": "AMS",
+    "arrivalTime": "08:00"
+  },
+  {
+    "id": 3,
+    "flightNumber": "322AA",
+    "date": "01/03/2018",
+    "airliner": "American Airlines",
+    "departureAirport": "AMS",
+    "departureTime": "07:30",
+    "arrivalAirport": "LHR",
+    "arrivalTime": "09:00"
+  }
+]
