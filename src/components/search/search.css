@@ -7,6 +7,7 @@
     -webkit-box-shadow: 10px 10px 15px 2px rgba(214,211,214,1);
     -moz-box-shadow: 10px 10px 15px 2px rgba(214,211,214,1);
     box-shadow: 10px 10px 15px 2px rgba(214,211,214,1);
+    position: relative;
 }
 .hr {
     background-color: rgba(214,211,214,1);
@@ -32,13 +33,28 @@
 }
 .results {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 500px;
     margin: 20px auto;
     text-align: center;
 }
+/* .rightside{
+    position: relative;
+} */
 .instructions {
     padding: 2px;
+}
+.newSearchBtn{
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    padding: 7px;
+    font-size: 10px;
+    border: none;
+    background-color: #232323;
+    color: #eee;
+    outline: none;
+    /* display: none; */
 }
 @media only screen and (max-width: 700px) {
   .results {
@@ -46,5 +62,10 @@
   }
   .rightside {
     padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .results {
+    justify-content: space-around;
   }
 }

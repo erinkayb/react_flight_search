@@ -12,7 +12,8 @@ class Search extends Component {
       flights: [],
       query: "",
       dateQuery: "",
-      matchFlights: []
+      matchFlights: [],
+      show: false
     }
   }
   handleGetData(e) {
@@ -31,6 +32,7 @@ class Search extends Component {
           }
         })
         this.setState({ matchFlights: matchFlights })
+        this.setState({ show: true })
       })
       .catch(error => console.log("error"))
   }
@@ -46,6 +48,7 @@ class Search extends Component {
     this.setState({ matchFlights: [] })
     this.setState({ query: "" })
     this.setState({ dateQuery: "" })
+    this.setState({ show: false })
   }
 
   render() {
@@ -97,7 +100,15 @@ class Search extends Component {
           </div>
           <div className="rightside">
             {flightDisplay}
-            <button onClick={this.resetForm}>New Search</button>
+            <div>
+              <button
+                style={{ display: this.state.show === false && "none" }}
+                className="newSearchBtn"
+                onClick={this.resetForm}
+              >
+                New Search
+              </button>
+            </div>
           </div>
         </div>
       </div>

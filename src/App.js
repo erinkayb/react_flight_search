@@ -7,7 +7,6 @@ class App extends Component {
   constructor(props) {
     super(props)
     console.log("hola")
-    // this.state = {}
 
     const flights = []
     this.state = {
