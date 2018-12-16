@@ -14,11 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 To test the search functionality use:
 
-flight number: 101BA
+flight number: 101BA,
 Date: 01/01/2018
 
-flight number: 511BA
+flight number: 511BA,
 Date: 01/02/2018
 
-flight number: 322AA
+flight number: 322AA,
 Date: 01/03/2018
